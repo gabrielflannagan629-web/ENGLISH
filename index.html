@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="top-online">
+      <div class="online-item">
+        <span class="online-dot"></span>
+        <strong id="playingNow">2845</strong>
+        <span>playing now</span>
+      </div>
+      <span class="divider"></span>
+      <div class="online-item">
+        <span class="online-green" id="wonLastHour">+123</span>
+        <span>wins in the last hour</span>
+      </div>
+    </header>
+
+    <section class="ticker-wrap" aria-label="Latest wins">
+      <div class="ticker" id="ticker"></div>
+    </section>
+
+    <section class="bonus-box">
+      <div class="gift">🎁</div>
+      <div class="bonus-text">
+        <small>PROMO CODE: LUCKY666W</small>
+        <strong>+500% &amp; 500FS</strong>
+      </div>
+      <button class="info-btn" type="button" id="bonusInfoBtn" aria-label="Bonus info" onclick="openBonusToast()">i</button>
+      <div class="timer" id="timer">03:00</div>
+    </section>
+
+    <section class="content">
+      <div class="games">
+        <article class="game-card">
+          <div class="game-badge">HOT</div>
+          <div class="game-window">
+            <video autoplay muted loop playsinline><source src="assets/game-1.mp4" type="video/mp4"></video>
+          </div>
+          <h2 class="game-name">TAPPY BIRD</h2>
+          <a class="play-btn" href="https://lkbb.cc/fd2529f2" target="_blank" rel="noopener">▶ Play</a>
+        </article>
+
+        <article class="game-card">
+          <div class="game-badge blue">NEW</div>
+          <div class="game-window">
+            <video autoplay muted loop playsinline><source src="assets/game-2.mp4" type="video/mp4"></video>
+          </div>
+          <h2 class="game-name">TOWER RUSH</h2>
+          <a class="play-btn" href="https://lkbb.cc/fd2529f2" target="_blank" rel="noopener">▶ Play</a>
+        </article>
+
+        <article class="game-card">
+          <div class="game-badge purple">VIP</div>
+          <div class="game-window">
+            <video autoplay muted loop playsinline><source src="assets/game-3.mp4" type="video/mp4"></video>
+          </div>
+          <h2 class="game-name">GURU MINES HACK</h2>
+          <a class="play-btn" href="https://lkbb.cc/fd2529f2" target="_blank" rel="noopener">
+            <svg class="telegram-icon-color" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="12" fill="#29A9EA"/>
+              <path fill="#ffffff" d="M17.9 7.1 15.8 17c-.2.7-.6.9-1.1.6l-3.1-2.3-1.5 1.5c-.2.2-.3.3-.6.3l.2-3.2 5.8-5.2c.3-.2-.1-.4-.4-.2l-7.2 4.5-3.1-1c-.7-.2-.7-.7.1-1l12.2-4.7c.6-.2 1 .1.8.8z"/>
+            </svg>
+            <span>Join Now</span>
+          </a>
+        </article>
+
+        <article class="game-card">
+          <div class="game-badge red">TOP</div>
+          <div class="game-window">
+            <video autoplay muted loop playsinline><source src="assets/game-4.mp4" type="video/mp4"></video>
+          </div>
+          <h2 class="game-name">GURU AVIATOR HACK</h2>
+          <a class="play-btn" href="https://lkbb.cc/fd2529f2" target="_blank" rel="noopener">
+            <svg class="telegram-icon-color" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="12" fill="#29A9EA"/>
+              <path fill="#ffffff" d="M17.9 7.1 15.8 17c-.2.7-.6.9-1.1.6l-3.1-2.3-1.5 1.5c-.2.2-.3.3-.6.3l.2-3.2 5.8-5.2c.3-.2-.1-.4-.4-.2l-7.2 4.5-3.1-1c-.7-.2-.7-.7.1-1l12.2-4.7c.6-.2 1 .1.8.8z"/>
+            </svg>
+            <span>Join Now</span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="bonus-toast" id="bonusToast">
+    <button class="toast-close" type="button" onclick="closeBonusToast()" aria-label="Close">×</button>
+    <div class="toast-icon">🎁</div>
+    <div class="toast-content">
+      <h2 id="toastTitle">Claim your bonus</h2>
+      <p id="toastText">Register now and get a 500% bonus plus 500FS using this promo code.</p>
+      <div class="toast-code">
+        <span id="toastCodeLabel">Promo code</span>
+        <div class="code-row">
+          <strong id="promoCode">LUCKY666W</strong>
+          <button class="copy-btn" onclick="copyPromo()">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fake-win-toast" id="fakeWinToast">
+    <div class="fake-win-flag" id="fakeWinFlag">🇺🇸</div>
+    <div class="fake-win-copy">
+      <small id="fakeWinId">ID: 482***</small>
+      <strong id="fakeWinAmount">BIG WIN +$347</strong>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
